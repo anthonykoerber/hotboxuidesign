@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/* CSS Document */
+/*********************/
+/* general & reset */
+@font-face {
+    font-family:'DSDigitalBold';
+    src: url('../fonts/ds-digital-bold-webfont.eot');
+    src: url('../fonts/ds-digital-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ds-digital-bold-webfont.woff') format('woff'),
+         url('../fonts/ds-digital-bold-webfont.ttf') format('truetype'),
+         url('../fonts/ds-digital-bold-webfont.svg#DSDigitalBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body { 
+	height:100%; 
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background:#090c0d;
+	font-family:Helvetica, Arial, sans-serif;
+	color:#fff;
+	font-size:12px;
+	line-height:12px;	
+}
+
+div, li, ul, a, h1, h2, h3, h4, h5, p {
+	margin:0px;
+	padding:0px;
+	position:relative;
+	float:left;	
+}
+
+ul, li {
+	list-style-type:none;	
+	overflow:hidden;
+}
+
+a {
+	overflow:hidden;
+	text-indent:-999px;	
+}
+
+/*********************/
+/*** hotbox ***/
+.container{
+	width:980px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	float:none;
+	margin:0 auto -62px;	
+}
+
+.hotbox {
+	background:url(../images/bg_base.jpg) no-repeat;
+	width:849px;
+	height:652px;	
+	margin:65px;
+	position:relative;
+}
+
+.footer, .push {
+	height:62px;
+	width:100%;
+}
+
+.footer { background:#000; }
+
+.footer p {
+	margin:25px;	
+}
+
+.steps, .pads, .ui { position:absolute; }
+
+/*********************/
+/* pads */
+/*** pads general ***/
+.pads {
+	width:519px;
+	height:513px;
+	top:85px;
+	left:72px;
+	display:none;
+}
+
+ul.pads-rows {
+	width:519px;
+	height:513px;	
+}
+
+ul.pads-rows li {
+	width:163px;
+	height:163px;
+	margin:0px 15px 12px 0px;
+}
+
+ul.pads-rows li.last { margin-right:0; }
+
+ul.pads-rows li.bottom { margin-bottom:0; }
+
+ul.pads-rows li a {
+	background:url(../images/sprite_sheet_pads.jpg) no-repeat;	
+	width:163px;
+	height:163px;
+}
+
+ul.pads-rows li a.pad7 { background-position:0px -1px; }
+
+ul.pads-rows li a.pad8 { background-position:-164px -1px; }
+
+ul.pads-rows li a.pad9 { background-position:-329px -1px; }
+
+ul.pads-rows li a.pad4 { background-position:0px -166px; }
+
+ul.pads-rows li a.pad5 { background-position:-164px -166px; }
+
+ul.pads-rows li a.pad6 { background-position:-329px -166px; }
+
+ul.pads-rows li a.pad1 { background-position:0px -331px; }
+
+ul.pads-rows li a.pad2 { background-position:-164px -331px; }
+
+ul.pads-rows li a.pad3 { background-position:-329px -331px; }
+
+ul.pads-rows li a.pad7:active { background-position:-493px -1px; }
+
+ul.pads-rows li a.pad8:active { background-position:-657px -1px; }
+
+ul.pads-rows li a.pad9:active { background-position:-822px -1px; }
+
+ul.pads-rows li a.pad4:active { background-position:-493px -166px; }
+
+ul.pads-rows li a.pad5:active { background-position:-657px -166px; }
+
+ul.pads-rows li a.pad6:active { background-position:-822px -166px; }
+
+ul.pads-rows li a.pad1:active { background-position:-493px -331px; }
+
+ul.pads-rows li a.pad2:active { background-position:-657px -331px; }
+
+ul.pads-rows li a.pad3:active { background-position:-822px -331px; }
+
+/*********************/
+/* ui groups */
+/*** ui groups general ***/
+h5.lcd {
+	font-family:'DSDigitalBold';
+	font-size:28px;
+	text-align:right;
+	line-height:39px;
+	color:#F00;
+	font-weight:normal;
+	background:url(../images/sprite_sheet_ui.png) no-repeat;
+	margin:0px 4px 0px 7px;
+}
+
+.ui {
+	width:184px;
+	height:518px;	
+	top:80px;
+	left:599px;	
+}
+
+.ui-group, .seq-ui-group {
+	width:184px;
+	height:auto;
+	margin-bottom:25px;	
+}
+
+.ui-group.last { margin-bottom:0; }
+
+h2.group-title, h3.group-title {
+	background:url(../images/sprite_sheet_ui.png) no-repeat;
+	text-indent:-999px;
+	overflow:hidden;	
+}
+
+h2.group-title {
+	width:170px;
+	height:10px;
+	font-size:10px;
+	line-height:10px;
+	margin:0px 7px 7px 7px;
+}
+
+h3.group-title {
+	width:85px;
+	height:6px;
+	font-size:6px;
+	line-height:6px;
+}
+
+
+/*** tempo ui group ***/
+h5.lcd.tempo {
+	background-position: 0px -197px;
+	width:59px;
+	height:39px;
+	padding-right:27px;
+	margin:0px 4px 0px 7px;
+}
+
+h2.group-title.tempo { background-position:0px -630px; margin-bottom:5px; }
+
+.stepper {
+	background:url(../images/sprite_sheet_ui.png) no-repeat;
+	width:37px;
+	height:32px;
+	margin: 4px 6px 0px 0px;	
+}
+
+.stepper.last { margin-right:0px; }
+
+.stepper.up { background-position:0px -75px; }
+
+.stepper.up:active { background-position:-42px -75px; }
+
+.stepper.down { background-position:0px -112px; }
+
+.stepper.down:active { background-position:-42px -112px; }
+
+
+/*** kit group ui ***/
+h2.group-title.drum-kit { background-position:0px -644px; }
+
+.kit-btn {
+	background:url(../images/sprite_sheet_ui.png) no-repeat;
+	width:37px;
+	height:32px;
+	margin: 0px 7px 0px 0px;	
+}
+
+.kit-btn.one { background-position:0px 0px; margin-left:7px; }
+
+.kit-btn.one:active, .kit-btn.one.active { background-position:0px -37px; }
+
+.kit-btn.two { background-position:-42px 0px; }
+
+.kit-btn.two:active, .kit-btn.two.active { background-position:-42px -37px; }
+
+.kit-btn.three { background-position:-84px 0px; }
+
+.kit-btn.three:active, .kit-btn.three.active { background-position:-84px -37px; }
+
+.kit-btn.four { background-position:-126px 0px; }
+
+.kit-btn.four:active, .kit-btn.four.active { background-position:-126px -37px; }
+
+.kit-btn.last { margin-right:0px; }
+
+
+/*** mode group ui ***/
+h2.group-title.play-mode { background-position:0px -658px; }
+
+.long-btn {
+	background:url(../images/sprite_sheet_ui.png) no-repeat;
+	width:169px;
+	height:34px;
+	margin: 0px 0px 7px 7px;
+	clear:both;		
+}
+
+.long-btn.pad.idle { background-position:0px -241px; }
+
+.long-btn.pad:active, .long-btn.pad.active { background-position:0px -280px; }
+
+.long-btn.seq.idle { background-position:0px -319px; }
+
+.long-btn.seq:active, .long-btn.seq.active { background-position:0px -358px; }
+
+.seq-btn-group .long-btn { margin: 0px 0px 7px 1px; }
+
+
+/*** seq ui group ***/
+.seq-ui-group { margin:101px 0px 0px 0px; }
+
+h2.group-title.sequencer { background-position:0px -673px; }
+
+.seq-box {
+	width:170px;
+	padding:7px 7px 9px 7px;
+	background:rgba(0, 0, 0, 0.25);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.seq-box .left-box, .seq-box .right-box { 
+	width:85px; 
+	margin-bottom:10px;
+}
+
+h5.lcd.seq {
+	background-position:-117px -197px;
+	width:31px;
+	height:39px;
+	padding-right:16px;
+	margin:0px 4px 0px 0px;
+}
+
+h3.group-title.bar { 
+	background-position:0px -689px; 
+	width:63px;
+	margin:0px 11px 7px 11px;
+}
+
+h3.group-title.length { 
+	background-position:-73px -689px; 
+	width:75px;
+	margin:0px 5px 7px 5px;
+}
+
+.long-btn.clear { background-position:0px -396px; }
+
+.long-btn.clear:active, .long-btn.clear.selected { background-position:0px -435px; }
+
+.long-btn.play { background-position:0px -474px; }
+
+.long-btn.play:active, .long-btn.play.selected { background-position:0px -514px; }
+
+.long-btn.pause { background-position:0px -552px; }
+
+.long-btn.pause:active, .long-btn.pause.selected { background-position:0px -591px; }
+
+.long-btn.last { margin-bottom:0; }
+
+.seq-box .stepper {
+	background:url(../images/sprite_sheet_ui.png) no-repeat;
+	width:34px;
+	height:20px;	
+	margin:0;
+}
+
+.seq-box .stepper.up { background-position:-84px -75px; }
+
+.seq-box .stepper.up:active { background-position:-126px -75px; }
+
+.seq-box .stepper.down { background-position:-84px -112px; }
+
+.seq-box .stepper.down:active { background-position:-126px -112px; }
+
+
+/*********************/
+/* step view */
+.steps {
+	background:url(../images/bg_sequencer.jpg) no-repeat;
+	width:516px;
+	height:517px;
+	top:80px;
+	left:72px;	
+	display:none;
+}
+
+/*** steps lcds ***/
+ul.steps-lcd {
+	width:497px;
+	height:18px;
+	margin:7px 0px 0px 19px;	
+}
+
+ul.steps-lcd li {
+	background:url(../images/sprite_sheet_ui.png) no-repeat;
+	width:28px;
+	height:15px;	
+	line-height:18px;
+	text-indent:-999px;
+	margin:0px 3px 3px 0px;
+}
+
+ul.steps-lcd li.active { background-position:-83px -159px; opacity:1.0; }
+
+ul.steps-lcd li.idle { background-position:-83px -145px; opacity:0.9; }
+
+ul.steps-lcd li.last { margin-right:0; }
+
+/*** step rows ***/
+ul.steps-row {
+	width:496px;
+	height:44px;
+	margin:4px 3px 7px 17px;
+}
+
+ul.steps-row li, ul.steps-row li a { 
+	width:31px;
+	height:44px;	
+}
+
+ul.steps-row li a { background:url(../images/sprite_sheet_ui.png) no-repeat; }
+
+ul.steps-row li a.idle { background-position:1px -148px; }
+
+ul.steps-row li a:active, ul.steps-row li a.selected { background-position:-41px -148px; }

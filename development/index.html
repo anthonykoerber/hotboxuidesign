@@ -1,0 +1,671 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript" src="js/consolelog.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>HotBox: Rhythm Sequencer</title>
+</head>
+<body>
+
+	 <div class="container">
+        
+        <div class="hotbox">
+        	<!-- step sequencer view -->
+            <div class="mode-view steps" data-id="1">
+            	<!-- step lcds top -->
+            	<ul id="steps-lcd" class="steps-lcd">
+                	<li data-name="s-lcd1" data-id="1" class="idle">s-lcd1</li>
+                    <li data-name="s-lcd2" data-id="2" class="idle">s-lcd2</li>
+                    <li data-name="s-lcd3" data-id="3" class="idle">s-lcd3</li>
+                    <li data-name="s-lcd4" data-id="4" class="idle">s-lcd4</li>
+                    <li data-name="s-lcd5" data-id="5" class="idle">s-lcd5</li>
+                    <li data-name="s-lcd6" data-id="6" class="idle">s-lcd6</li>
+                    <li data-name="s-lcd7" data-id="7" class="idle">s-lcd7</li>
+                    <li data-name="s-lcd8" data-id="8" class="idle">s-lcd8</li>
+                    <li data-name="s-lcd9" data-id="9" class="idle">s-lcd9</li>
+                    <li data-name="s-lcd10" data-id="10" class="idle">s-lcd10</li>
+                    <li data-name="s-lcd11" data-id="11" class="idle">s-lcd11</li>
+                    <li data-name="s-lcd12" data-id="12" class="idle">s-lcd12</li>
+                    <li data-name="s-lcd13" data-id="13" class="idle">s-lcd13</li>
+                    <li data-name="s-lcd14" data-id="14" class="idle">s-lcd14</li>
+                    <li data-name="s-lcd15" data-id="15" class="idle">s-lcd15</li>
+                    <li data-name="s-lcd16" data-id="16" class="last idle">s-lcd16</li>
+                </ul>
+                <!-- step button rows -->
+                <!-- step butn row 1 -->
+                <ul id="steps-row-1" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b1" data-id="1">s-r1-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b2" data-id="2">s-r1-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b3" data-id="3">s-r1-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b4" data-id="4">s-r1-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b5" data-id="5">s-r1-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b6" data-id="6">s-r1-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b7" data-id="7">s-r1-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b8" data-id="8">s-r1-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b9" data-id="9">s-r1-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b10" data-id="10">s-r1-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b11" data-id="11">s-r1-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b12" data-id="12">s-r1-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b13" data-id="13">s-r1-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b14" data-id="14">s-r1-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b15" data-id="15">s-r1-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r1" data-name="s-r1-b16" data-id="16">s-r1-b16</a></li>
+                </ul>
+                <!-- step butn row 2 -->
+                <ul id="steps-row-2" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b1" data-id="1">s-r2-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b2" data-id="2">s-r2-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b3" data-id="3">s-r2-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b4" data-id="4">s-r2-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b5" data-id="5">s-r2-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b6" data-id="6">s-r2-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b7" data-id="7">s-r2-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b8" data-id="8">s-r2-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b9" data-id="9">s-r2-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b10" data-id="10">s-r2-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b11" data-id="11">s-r2-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b12" data-id="12">s-r2-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b13" data-id="13">s-r2-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b14" data-id="14">s-r2-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b15" data-id="15">s-r2-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r2" data-name="s-r2-b16" data-id="16">s-r2-b16</a></li>
+                </ul>
+                <!-- step butn row 3 -->
+                <ul id="steps-row-3" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b1" data-id="1">s-r3-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b2" data-id="2">s-r3-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b3" data-id="3">s-r3-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b4" data-id="4">s-r3-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b5" data-id="5">s-r3-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b6" data-id="6">s-r3-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b7" data-id="7">s-r3-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b8" data-id="8">s-r3-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b9" data-id="9">s-r3-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b10" data-id="10">s-r3-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b11" data-id="11">s-r3-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b12" data-id="12">s-r3-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b13" data-id="13">s-r3-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b14" data-id="14">s-r3-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b15" data-id="15">s-r3-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r3" data-name="s-r3-b16" data-id="16">s-r3-b16</a></li>
+                </ul>
+                <!-- step butn row 4 -->
+                <ul id="steps-row-4" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b1" data-id="1">s-r4-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b2" data-id="2">s-r4-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b3" data-id="3">s-r4-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b4" data-id="4">s-r4-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b5" data-id="5">s-r4-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b6" data-id="6">s-r4-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b7" data-id="7">s-r4-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b8" data-id="8">s-r4-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b9" data-id="9">s-r4-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b10" data-id="10">s-r4-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b11" data-id="11">s-r4-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b12" data-id="12">s-r4-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b13" data-id="13">s-r4-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b14" data-id="14">s-r4-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b15" data-id="15">s-r4-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r4" data-name="s-r4-b16" data-id="16">s-r4-b16</a></li>
+                </ul>
+                <!-- step butn row 5 -->
+                <ul id="steps-row-5" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b1" data-id="1">s-r5-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b2" data-id="2">s-r5-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b3" data-id="3">s-r5-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b4" data-id="4">s-r5-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b5" data-id="5">s-r5-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b6" data-id="6">s-r5-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b7" data-id="7">s-r5-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b8" data-id="8">s-r5-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b9" data-id="9">s-r5-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b10" data-id="10">s-r5-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b11" data-id="11">s-r5-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b12" data-id="12">s-r5-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b13" data-id="13">s-r5-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b14" data-id="14">s-r5-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b15" data-id="15">s-r5-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r5" data-name="s-r5-b16" data-id="16">s-r5-b16</a></li>
+                </ul>
+                <!-- step butn row 6 -->
+                <ul id="steps-row-6" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b1" data-id="1">s-r6-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b2" data-id="2">s-r6-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b3" data-id="3">s-r6-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b4" data-id="4">s-r6-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b5" data-id="5">s-r6-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b6" data-id="6">s-r6-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b7" data-id="7">s-r6-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b8" data-id="8">s-r6-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b9" data-id="9">s-r6-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b10" data-id="10">s-r6-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b11" data-id="11">s-r6-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b12" data-id="12">s-r6-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b13" data-id="13">s-r6-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b14" data-id="14">s-r6-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b15" data-id="15">s-r6-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r6" data-name="s-r6-b16" data-id="16">s-r6-b16</a></li>
+                </ul>
+                <!-- step butn row 7 -->
+                <ul id="steps-row-7" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b1" data-id="1">s-r7-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b2" data-id="2">s-r7-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b3" data-id="3">s-r7-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b4" data-id="4">s-r7-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b5" data-id="5">s-r7-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b6" data-id="6">s-r7-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b7" data-id="7">s-r7-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b8" data-id="8">s-r7-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b9" data-id="9">s-r7-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b10" data-id="10">s-r7-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b11" data-id="11">s-r7-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b12" data-id="12">s-r7-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b13" data-id="13">s-r7-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b14" data-id="14">s-r7-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b15" data-id="15">s-r7-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r7" data-name="s-r7-b16" data-id="16">s-r7-b16</a></li>
+                </ul>
+                <!-- step butn row 8 -->
+                <ul id="steps-row-8" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b1" data-id="1">s-r8-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b2" data-id="2">s-r8-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b3" data-id="3">s-r8-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b4" data-id="4">s-r8-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b5" data-id="5">s-r8-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b6" data-id="6">s-r8-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b7" data-id="7">s-r8-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b8" data-id="8">s-r8-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b9" data-id="9">s-r8-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b10" data-id="10">s-r8-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b11" data-id="11">s-r8-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b12" data-id="12">s-r8-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b13" data-id="13">s-r8-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b14" data-id="14">s-r8-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b15" data-id="15">s-r8-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r8" data-name="s-r8-b16" data-id="16">s-r8-b16</a></li>
+                </ul>
+                <!-- step butn row 9 -->
+                <ul id="steps-row-9" class="steps-row">
+                	<li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b1" data-id="1">s-r9-b1</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b2" data-id="2">s-r9-b2</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b3" data-id="3">s-r9-b3</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b4" data-id="4">s-r9-b4</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b5" data-id="5">s-r9-b5</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b6" data-id="6">s-r9-b6</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b7" data-id="7">s-r9-b7</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b8" data-id="8">s-r9-b8</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b9" data-id="9">s-r9-b9</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b10" data-id="10">s-r9-b10</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b11" data-id="11">s-r9-b11</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b12" data-id="12">s-r9-b12</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b13" data-id="13">s-r9-b13</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b14" data-id="14">s-r9-b14</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b15" data-id="15">s-r9-b15</a></li>
+                    <li><a href="javascript:void(0)" class="idle" data-parent="s-r9" data-name="s-r9-b16" data-id="16">s-r9-b16</a></li>
+                </ul>
+            </div>
+            <!-- pads view -->
+            <div class="mode-view pads" data-id="0">
+            	<ul id="pads-rows" class="pads-rows">
+                	<!-- pads in order of num pad keys -->
+                    <!-- pads row 1 -->
+               		<li><a href="javascript:void(0)" class="pad7" data-name="pb7" data-id="7">pb7</a></li>
+                    <li><a href="javascript:void(0)" class="pad8" data-name="pb8" data-id="8">pb8</a></li>
+                    <li class="last"><a href="javascript:void(0)" class="pad9" data-name="pb9" data-id="9">pb9</a></li>
+                    <!-- pads row 2 -->
+               		<li><a href="javascript:void(0)" class="pad4" data-name="pb4" data-id="4">pb4</a></li>
+                    <li><a href="javascript:void(0)" class="pad5" data-name="pb5" data-id="5">pb5</a></li>
+                    <li class="last"><a href="javascript:void(0)" class="pad6" data-name="pb6" data-id="6">pb6</a></li>
+                    <!-- pads row 3 -->
+               		<li class="bottom"><a href="javascript:void(0)" class="pad1" data-name="pb1" data-id="1">pb1</a></li>
+                    <li class="bottom"><a href="javascript:void(0)" class="pad2" data-name="pb2" data-id="2">pb2</a></li>
+                    <li class="bottom last"><a href="javascript:void(0)" class="pad3" data-name="pb3" data-id="3">pb3</a></li>
+                </ul>
+            </div>
+            <!-- right side ui -->
+            <div class="ui">
+            	<!-- tempo ui group -->
+                <div class="ui-group">
+                	<h2 class="group-title tempo">TEMPO</h2>
+                    <h5 id="tempo-lcd" class="lcd tempo">100</h5>
+                    <a href="javascript:void(0)" id="tempo-up"   class="stepper up">tempo up</a>
+                    <a href="javascript:void(0)" id="tempo-down" class="stepper down last">tempo down</a>
+                </div>
+                <!-- drum kit ui group -->
+                <div class="ui-group">
+                	<h2 class="group-title drum-kit">DRUM KIT</h2>
+                    <a href="javascript:void(0)" class="kit-btn one idle"   data-id="0">kit one</a>
+                    <a href="javascript:void(0)" class="kit-btn two idle"   data-id="1">kit two</a>
+                    <a href="javascript:void(0)" class="kit-btn three idle" data-id="2">kit three</a>
+                    <a href="javascript:void(0)" class="kit-btn four idle"  data-id="3">kit four</a>
+                </div>
+                <!-- play mode ui group -->
+                <div class="ui-group last">
+                	<h2 class="group-title play-mode">PLAY MODE</h2>
+                    <a href="javascript:void(0)" class="long-btn mode-btn idle pad"      data-id="0">pads</a>
+                    <a href="javascript:void(0)" class="long-btn mode-btn idle last seq" data-id="1">sequencer</a>
+                </div>
+                <!-- sequencer ui group -->
+                <div class="seq-ui-group">
+                	<h2 class="group-title sequencer">SEQUENCER</h2>
+                    <div class="seq-box">
+                        <div class="left-box">
+                        	<h3 class="group-title bar">CURRENT BAR</h3>
+                            <h5 id = "bar-lcd" class="lcd seq">1</h5>
+                            <a href="javascript:void(0)" id="bar-up"   class="stepper up">bar up</a>
+                            <a href="javascript:void(0)" id="bar-down" class="stepper down">bar down</a>
+                        </div>
+                    	<div class="right-box">
+                        	<h3 class="group-title length">PATTERN LENGTH</h3>
+                            <h5 id="length-lcd" class="lcd seq">4</h5>
+                            <a href="javascript:void(0)" id="length-up"   class="stepper up">length up</a>
+                            <a href="javascript:void(0)" id="length-down" class="stepper down">length down</a>
+                        </div>
+                        <div class="seq-btn-group">
+                        	<a href="javascript:void(0)" id="clear-btn"      class="long-btn clear">clear</a>
+                    		<a href="javascript:void(0)" id="play-pause-btn" class="long-btn last play">play-pause</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user info area -->
+            <!-- TODO - design / figure this out -->
+        </div>
+        <!-- sticky footer push -->
+        <div class="push"></div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+    	<p>&copy; 2012 Anthony Koerber | Squareproduct.com</p>
+    </div>
+    <!-- TMP ui testing scripts -->
+    <script type="text/javascript">
+		// globals:
+		var BPM_MIN =    60,
+			BPM_MAX =    150, 
+			BAR_MIN =    0,
+			BAR_MAX =    3,
+			LENGTH_MIN = 0,
+			LENGTH_MAX = 3,
+			STEP_MAX =   15,
+			step =       0,
+			bar =        0,
+			length =     0,
+			bpm =        120,
+			kit =        0,
+			mode =       1,
+			msBpm,
+			isPlaying,
+			interval;
+		
+		// dom elements cache:	
+		var stepsLcd,
+			tempoLcd, 
+			tempoUp, 
+			tempoDown,
+			kitBtn,
+			modeBtn,
+			modeView,
+			clearBtn, 
+			playPauseBtn,
+			barLcd, 
+			barUp, 
+			barDown, 
+			lengthLcd, 
+			lengthUp, 
+			lengthDown;
+		
+		// document ready:
+		$(document).ready(init);
+		
+		function init(){
+			// cache elems:
+			// steps lcd:
+			stepsLcd =     $('#steps-lcd');
+			
+			// tempo group:
+			tempoLcd =     $('#tempo-lcd');
+			tempoUp =      $('#tempo-up');
+			tempoDown =    $('#tempo-down');
+			
+			// kit group:
+			kitBtn =       $('.kit-btn');
+			
+			// mode group:
+			modeView =     $('.mode-view');
+			modeBtn =      $('.mode-btn');
+			
+			// seq group:
+			clearBtn =     $('#clear-btn');
+			playPauseBtn = $('#play-pause-btn');
+			barLcd =       $('#bar-lcd');
+			barUp = 	   $('#bar-up');
+			barDown = 	   $('#bar-down');
+			lengthLcd =    $('#length-lcd');
+			lengthUp =     $('#length-up');
+			lengthDown =   $('#length-down');
+			
+			// set props:
+			isPlaying =    false;
+			setBPM();
+			setBar();
+			setLength();
+			setKit();
+			setMode();
+			
+			// handle clicks:
+			kitBtn.mouseup(switchKit);
+			modeBtn.mouseup(switchMode);
+			playPauseBtn.mouseup(togglePlayPause);	
+			clearBtn.mouseup(clearPattern);
+			tempoUp.mouseup(incrTempo);
+			tempoDown.mouseup(decrTempo);
+			lengthUp.mouseup(incrLength);
+			lengthDown.mouseup(decrLength);
+			barUp.mouseup(incrBar);
+			barDown.mouseup(decrBar);
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// seq lights:
+		function flashSeqLights(){
+			setStepLcd();
+			
+			++step;
+			if(step > STEP_MAX) step = 0;
+		}
+		
+		function setStepLcd(_resetSteps){
+			var prevLcd, 
+				currLcd
+				resetSteps = _resetSteps || false;
+			
+			// set current step lcd:
+			prevLcd = stepsLcd.children().get(step - 1);
+			currLcd = stepsLcd.children().get(step);
+			
+			// swap classes for elements:
+			if(!resetSteps){
+				swapClass(prevLcd, 'idle', 'active');
+				swapClass(currLcd, 'active', 'idle');
+			} else {
+				swapClass(prevLcd, 'idle', 'active');
+				swapClass(currLcd, 'idle', 'active');
+			}
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// play-pause:
+		function togglePlayPause(e){
+			e.preventDefault();
+			
+			if(isPlaying == false){
+				isPlaying = true;
+				startSeqInterval();
+				swapClass(playPauseBtn, 'pause', 'play');
+			} else {
+				isPlaying = false;
+				stopSeqInterval(true);
+				swapClass(playPauseBtn, 'play', 'pause');
+			}
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// swap class util:
+		function swapClass(_elem, _classAdd, _classRemove){
+			var elem = $(_elem);
+			var classAdd = _classAdd;
+			var classRemove = _classRemove;
+			
+			// ConsoleLog.log('swapClass');
+			// ConsoleLog.log(elem);
+			
+			if(elem.hasClass(classRemove)) {
+				elem.removeClass(classRemove);
+				elem.addClass(classAdd);
+			}
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// interval utils:
+		function startSeqInterval(){
+			interval = setInterval('update()', msBpm);
+		}
+		
+		function update(){
+			// ConsoleLog.log(step);
+			//***************************************
+			// TODO - all methods that need to be called on tick:
+			//***************************************
+			flashSeqLights();
+		}
+		
+		function stopSeqInterval(_reset){
+			var reset = _reset || false;
+			
+			clearInterval(interval);
+			
+			if(reset){
+				setStepLcd(true)
+				step = 0;
+			}
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// set BPM:
+		function incrTempo(e){
+			e.preventDefault();
+			
+			if(bpm < BPM_MAX) {
+				++bpm;
+				setBPM(isPlaying);
+			}
+		}
+		
+		function decrTempo(e){
+			e.preventDefault();
+			
+			if(bpm > BPM_MIN) {
+				--bpm;
+				setBPM(isPlaying);
+			}
+		}
+		
+		function setBPM(_start){
+			var newBpm = bpm,
+				start = _start || false;
+			
+			// do the calculation then set the global msBpm (milliseconds):
+			msBpm = Math.round((60000/newBpm)/4);
+			
+			// set the lcd display:
+			tempoLcd.html(String(newBpm));
+			
+			// reset the interval:
+			if(start){
+				stopSeqInterval(false);
+				startSeqInterval();
+			}
+			// ConsoleLog.log('bpm: ' + bpm + ' | _start: ' + _start + '1/16th note delay - msBpm: ' + msBpm + 'ms');
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// bar and length steppers:
+		function incrBar(e){
+			e.preventDefault();
+			
+			if(bar < BAR_MAX) {
+				++bar;
+				setBar();
+			}
+		}
+		
+		function decrBar(e){
+			e.preventDefault();
+			
+			if(bar > BAR_MIN) {
+				--bar;
+				setBar();
+			}
+		}
+		
+		function setBar(_start){
+			var start = _start || false;
+			
+			// ConsoleLog.log(bar);
+			// set the lcd display:
+			barLcd.html(String(bar + 1));
+			
+			// set the sequencer:
+			//***************************************
+			// TODO - set sequencer up appropriately
+			//***************************************
+			if(start){
+				//***************************************
+				// TODO - is this necessary for isPlaying scenario?
+				//***************************************
+			}
+		}
+		
+		function incrLength(e){
+			e.preventDefault();
+			
+			if(length < LENGTH_MAX) {
+				++length;
+				
+				setLength();
+			}
+		}
+		
+		function decrLength(e){
+			e.preventDefault();
+			
+			if(length > LENGTH_MIN) {
+				--length;
+				setLength();
+			}
+		}
+		
+		function setLength(_start){
+			var start = _start || false;
+			
+			// ConsoleLog.log(length);
+			// set the lcd display:
+			lengthLcd.html(String(length + 1));
+			
+			// set the sequencer:
+			//***************************************
+			// TODO - set sequencer up appropriately
+			//***************************************
+			if(start){
+				//***************************************
+				// TODO - is this necessary for isPlaying scenario?
+				//***************************************
+			}
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// clear pattern:
+		function clearPattern(e){
+			e.preventDefault();
+			
+			ConsoleLog.log('clearPattern');
+			//***************************************
+			// TODO - set sequencer up appropriately
+			//***************************************
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// set kit:
+		function switchKit(e){
+			e.preventDefault();
+			
+			var btn = $(this);
+			
+			kit = btn.attr('data-id');
+			setKit();
+		}
+		
+		function setKit(_start){
+			var start = _start || false;
+			
+			ConsoleLog.log('kit: ' + kit);
+			
+			kitBtn.each(function(index){
+				var btn = $(this);
+				var int = parseInt(btn.attr('data-id'));
+				
+				if(int != kit){
+					swapClass(btn, 'idle', 'active');
+				} else {
+					swapClass(btn, 'active', 'idle');
+				}	
+			});
+			
+			// set the sequencer:
+			//***************************************
+			// TODO - set sequencer up appropriately
+			//***************************************
+			if(start){
+				//***************************************
+				// TODO - is this necessary for isPlaying scenario?
+				//***************************************
+			}
+		}
+		
+		// -- -- -- -- -- -- -- -- -- --
+		// set mode:
+		function switchMode(e){
+			e.preventDefault();
+			
+			var btn = $(this);
+			
+			mode = btn.attr('data-id');
+			setMode();
+		}
+		
+		function setMode(_start){
+			var start = _start || false;
+			
+			ConsoleLog.log('mode: ' + mode);
+			
+			// set btn state:
+			modeBtn.each(function(index){
+				var btn = $(this);
+				var int = parseInt(btn.attr('data-id'));
+				
+				if(int != mode){
+					swapClass(btn, 'idle', 'active');
+				} else {
+					swapClass(btn, 'active', 'idle');
+				}	
+			});
+			
+			// set view state:
+			modeView.each(function(index){
+				var view = $(this);
+				var int = parseInt(view.attr('data-id'));
+				
+				if(int != mode){
+					view.hide();
+				} else {
+					view.show();
+				}	
+			});
+			
+			// set the sequencer:
+			//***************************************
+			// TODO - set sequencer up appropriately
+			//***************************************
+			if(start){
+				//***************************************
+				// TODO - is this necessary for isPlaying scenario?
+				//***************************************
+			}
+		}
+		
+	</script>
+</body>
+</html>
